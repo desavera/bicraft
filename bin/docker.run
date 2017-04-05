@@ -1,0 +1,2 @@
+sudo docker run -it --volume `pwd`:/docked desavera/zinzanedev:init /bin/bash
+

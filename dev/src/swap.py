@@ -13,9 +13,9 @@ from oauth2client import tools
 
 SCOPES = ['https://www.googleapis.com/auth/analytics.readonly']
 DISCOVERY_URI = ('https://analyticsreporting.googleapis.com/$discovery/rest')
-KEY_FILE_LOCATION = '<REPLACE_WITH_P12_FILE>'
-SERVICE_ACCOUNT_EMAIL = '<REPLACE_WITH_SERIVICE_ACCOUNT_EMAIL>'
-VIEW_ID = '<REPLACE_WITH_VIEW_ID>'
+KEY_FILE_LOCATION = 'client_secrets.p12'
+SERVICE_ACCOUNT_EMAIL = 'desavera@gmail.com'
+VIEW_ID = '69520391'
 
 
 def initialize_analyticsreporting():
