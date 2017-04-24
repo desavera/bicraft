@@ -1,0 +1,5 @@
+curl --request GET \
+  --url http://zinzane.vtexcommercebeta.com.br/api/catalog_system/pvt/saleschannel/list \
+  --header 'content-type: application/json' \
+  --header 'x-vtex-api-appkey: vtexappkey-zinzane-WCTXQL' \
+  --header 'x-vtex-api-apptoken: BFKNQNMPGXXIKALUMRHBEHMMKNEQARXTNUETGBQFMVNBYRVSNYISMUGUSYDCIWPOZEVPWROKABOJTLOSRMCBJEHSNJBHXOWQFZBUWFWVKXSKGXAGKLKWUNEVWCCMPGNM'

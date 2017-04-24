@@ -1,18 +1,13 @@
 sudo apt-get -y update && apt-get -y upgrade
 sudo apt-get install --reinstall -y language-pack-en language-pack-pt
 sudo apt-get install -y build-essential libssl-dev libffi-dev python-dev python-pip libsasl2-dev libldap2-dev
+sudo pip install virtualenvwrapper
 
-# .cache ownership not checked 
-# sudo -H pip install virtualenvwrapper
-sudo conda create -n superset-env python=2.7
-
-# variant WORK dir 
 export WORKON_HOME=$HOME/.virtualenvs
-#source /usr/local/bin/virtualenvwrapper.sh
+source /usr/local/bin/virtualenvwrapper.sh
 
 # create virtualenv
-# mkvirtualenv superset-env
-source activate superset-dev
+mkvirtualenv superset-env
 
 # Install superset
 pip install superset
@@ -30,7 +25,7 @@ superset load_examples
 superset init
 
 # Start the web server on port 8088, use -p to bind to another port
-superset runserver
+superset runserver 
 
 # To start a development web server, use the -d switch
 # superset runserver -d
