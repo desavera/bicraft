@@ -1,2 +1,13 @@
-sudo docker run -it --volume `pwd`:/docked desavera/zinzanedev:init /bin/bash
-
+# B2W authenticated docker run
+# sudo dockerd --insecure-registry registry.atlas.b2w:5000
+#
+# RUN SUPERSET
+# docker run --detach --name superset [options] amancevice/superset
+# INIT DATABASE
+# sudo docker exec -it superset superset-init
+# sudo docker run --detach --name superset --add-host=lvnn-priv.b2w:10.13.9.20 -p 8088:8088 --expose 8088 --dns=10.234.80.47 --dns-search=la.ad.b2w --volume `pwd`:/home/superset/.superset desavera/superset-amancevice
+#sudo docker exec -it superset demo
+#
+# working fine 5/2017
+#
+sudo docker run -it --name superset -p 8088:8088 --expose 8088 --dns=8.8.8.8 --volume `pwd`:/docked desavera/bicraft:0.2 /bin/bash /docked/bin/superset.sh
