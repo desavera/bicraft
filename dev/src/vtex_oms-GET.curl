@@ -1,5 +1,5 @@
 curl --request GET \
-  --url http://zinzane.vtexcommercebeta.com.br/api/catalog_system/pvt/sku/stockkeepingunitbyid/55 \
+  --url http://zinzane.vtexcommercebeta.com.br/api/oms/pvt/orders/v976756ambn-01/conversation-message \
   --header 'accept: application/json' \
   --header 'content-type: application/json' \
   --header 'x-vtex-api-appkey: vtexappkey-zinzane-WCTXQL' \
