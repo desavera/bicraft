@@ -1,0 +1,16 @@
+#!/bin/bash
+
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
+export PYTHONPATH=/opt/superset:$WORKON_HOME/superset-env/lib/python-2.7
+
+
+# the virtualenv environment variables are set in .bashrc for docker image exports !
+workon superset-env
+
+# Create default roles and permissions
+superset init
+
+# Start the web server on port 8088, use -p to bind to another port
+superset runserver 
+
