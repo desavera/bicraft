@@ -1,7 +1,1 @@
-curl --request GET \
-  --url http://zinzane.vtexcommercebeta.com.br/api/oms/pvt/orders?orderBy=orderId,desc&f_shippingEstimate=7.days&f_status=ready-for-handling \
-  --header 'accept: application/json' \
-  --header 'content-type: application/json' \
-  --header 'x-vtex-api-appkey: vtexappkey-zinzane-WCTXQL
-' \
-  --header 'x-vtex-api-apptoken: BFKNQNMPGXXIKALUMRHBEHMMKNEQARXTNUETGBQFMVNBYRVSNYISMUGUSYDCIWPOZEVPWROKABOJTLOSRMCBJEHSNJBHXOWQFZBUWFWVKXSKGXAGKLKWUNEVWCCMPGNM'
+curl --request GET --url "http://zinzane.vtexcommercestable.com.br/api/oms/pvt/orders?orderBy=orderId,desc&f_shippingEstimate=7.days&f_status=ready-for-handling" --header "accept: application/json" --header "content-type: application/json" --header "x-vtex-api-appkey: vtexappkey-zinzane-WCTXQL" --header "x-vtex-api-apptoken: BFKNQNMPGXXIKALUMRHBEHMMKNEQARXTNUETGBQFMVNBYRVSNYISMUGUSYDCIWPOZEVPWROKABOJTLOSRMCBJEHSNJBHXOWQFZBUWFWVKXSKGXAGKLKWUNEVWCCMPGNM"
