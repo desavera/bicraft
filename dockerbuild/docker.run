@@ -1,9 +1,0 @@
-# B2W authenticated docker run
-# sudo dockerd --insecure-registry registry.atlas.b2w:5000
-#
-
-# rm previous
-sudo docker rm superset-prod
-
-# RUN SUPERSET
-sudo docker run -d --name superset-prod -p 8080:8080 --dns=10.234.80.47 --dns-search=la.ad.b2w registry.atlas.b2w:5000/b2wdigital/superset-b2w:teste
