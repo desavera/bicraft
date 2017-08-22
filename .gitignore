@@ -88,4 +88,7 @@ ENV/
 .ropeproject
 
 # data high volume
-data/
+**/data/
+
+# backup
+backup/
