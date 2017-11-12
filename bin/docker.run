@@ -1,2 +1,3 @@
 # RUN SUPERSET
-sudo docker run --detach --name bicraft -p 8080:8080 --dns=8.8.8.8 --volume `pwd`:/docked desavera/bicraft:1.0 
+#sudo docker run --detach --name bicraft -p 8080:8080 --dns=8.8.8.8 --volume `pwd`:/docked desavera/bicraft:1.0 
+sudo docker run --detach --name bicraft -p 8080:8080 --dns=8.8.8.8 --volume `pwd`:/docked desavera/bicraft:PROD-ZINZANE

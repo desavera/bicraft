@@ -1,5 +1,5 @@
 #FROM registry.atlas.b2w:5000/b2wdigital/superset-b2w:superset-configured
-FROM registry.atlas.b2w:5000/b2wdigital/superset-b2w:base
+FROM desavera/bicraft:ICON
 
 ADD . /opt/superset
 
